@@ -1,9 +1,10 @@
 # Nand2Tetris-vscode
-![licence](https://img.shields.io/bower/l/Mi)![Build Status](https://api.travis-ci.org/loyio/Nand2Tetris-vscode.svg "Build Status")
+![licence](https://img.shields.io/bower/l/Mi) ![Build Status](https://api.travis-ci.org/loyio/Nand2Tetris-vscode.svg "Build Status")  ![release](https://img.shields.io/github/v/release/loyio/Nand2Tetris-vscode)
 
 A vscode extension for Nand2Tetris Project
 
 
+## Features
 
 
 
