@@ -1,6 +1,10 @@
-All notable changes to the "nand2tetris-snippets" extension will be documented in this file.
+All notable changes to the "Nand2Tetris for vscode" extension will be documented in this file.
 
-## [0.0.1]
+## [0.1.2]
+
+- update the description pages
+
+## [0.1.1]
 
 - Initial release.
 

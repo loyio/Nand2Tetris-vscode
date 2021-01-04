@@ -37,7 +37,12 @@ A vscode extension for Nand2Tetris Project
 
 ## Change log
 
+### v0.1.2
+
+- update the description pages
+
 ### v0.1.1
+
 * Initial release
 
 ## TODO
