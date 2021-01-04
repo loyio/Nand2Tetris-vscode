@@ -1,0 +1,35 @@
+{
+  "Creates Memory chip": {
+    "prefix": "Memory",
+    "body": "Memory(in=${1:in}, load=${2:load}, address=${3:addr}, out={4:out});",
+    "description": "takes in a 16 bit value, load value and a 15 bit address\n"
+  },
+  "Creates a CPU": {
+    "prefix": "CPU",
+    "body": "CPU(inM=${1:inM}, instruction=${2:ins}, reset=${3:reset}, outM=${4:out}, writeM=${5:outwriteIntoM}, addressM=${6:outAddrM}, pc=${7:outPc});",
+    "description": [
+      "Consists of an ALU and a set of registers, designed to fetch and\n",
+      "execute instructions",
+      "M: value input  (M = contents of RAM[A])",
+      "Instruction: for execution",
+      "OutM: M value output",
+      "writeM: Write into M",
+      "Address in data memory (of M)",
+      "pc: address of next instruction\n"
+    ]
+  },
+  "Creates a Computer": {
+    "prefix": "Computer",
+    "body": "Computer(inM=${1:inM}, instruction=${2:instruction}, reset=${3:reset}, outM=${4:outM}, writeM=${5:outwriteIntoM}, addressM=${6:outAddrM}, pc=${7:outPc});",
+    "description": [
+      "including CPU, ROM and RAM.\n",
+      "When reset is 0, the program stored in the computer's ROM executes.",
+      "When reset is 1, the execution of the program restarts.",
+      "Thus, to start a program's execution, reset must be pushed 'up' (1)",
+      "and 'down' (0). From this point onward the user is at the mercy of",
+      "the software. In particular, depending on the program's code, the",
+      "screen may show some output and the user may be able to interact",
+      "with the computer via the keyboard.\n"
+    ]
+  }
+}

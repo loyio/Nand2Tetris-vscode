@@ -1,0 +1,124 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "HDL",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#boolean"
+    },
+    {
+      "include": "#params"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#grammar"
+    },
+    {
+      "include": "#blockComment"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "match": "(CHIP) +([\\w\\d_]+)",
+          "captures": {
+            "1": {
+              "name": "keyword.control"
+            },
+            "2": {
+              "name": "variable.language"
+            }
+          }
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash",
+          "match": "//.*"
+        }
+      ]
+    },
+    "boolean": {
+      "patterns": [
+        {
+          "name": "entity.name.tag",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "params": {
+      "patterns": [
+        {
+          "match": "([a-z]+)=([a-z]+[0-9]*)",
+          "captures": {
+            "1": {
+              "name": "variable.parameter"
+            },
+            "2": {
+              "name": "markup.bold"
+            }
+          }
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "entity.name.function",
+          "match": "([a-zA-Z]|[0-9]| )+(?=\\()"
+        }
+      ]
+    },
+    "grammar": {
+      "patterns": [
+        {
+          "name": "entity.name.type",
+          "match": "(?<=\\[)(.*?)(?=\\])"
+        },
+        {
+          "name": "variable.name",
+          "match": "(IN|OUT|PARTS)"
+        }
+      ]
+    },
+    "blockComment": {
+      "patterns": [
+        {
+          "begin": "\\/\\*\\*",
+          "end": "\\*\\/",
+          "name": "comment.block"
+        },
+        {
+          "begin": "\\/\\*",
+          "end": "\\*\\/",
+          "name": "comment.block"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.hdl"
+}

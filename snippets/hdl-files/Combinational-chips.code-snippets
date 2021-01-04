@@ -1,0 +1,58 @@
+{
+  "Creates a Half Adder": {
+    "prefix": "HalfAdder",
+    "body": "HalfAdder(a=${1:a}, b=${2:b}, sum=${3:out}, carry=${4:carry});",
+    "description": [
+      "Takes two inputs and applies a binary addition to get an outout.\n",
+      "| a | b |out|car|",
+      "| 1 | 1 | 1 | 1 |",
+      "| 1 | 0 | 1 | 0 |",
+      "| 0 | 1 | 1 | 0 |",
+      "| 0 | 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a Full Adder": {
+    "prefix": "FullAdder",
+    "body": "FullAdder(a=${1:a}, b=${2:b}, c=${3:c}, sum=${4:out}, carry=${5:carry});",
+    "description": [
+      "Takes three inputs and applies a binary addition to get an outout.\n",
+      "| a | b |cin|sum|car|",
+      "| 1 | 1 | 1 | 1 | 1 |",
+      "| 1 | 1 | 0 | 0 | 1 |",
+      "| 1 | 0 | 1 | 0 | 1 |",
+      "| 1 | 0 | 0 | 1 | 0 |",
+      "| 0 | 1 | 1 | 0 | 1 |",
+      "| 0 | 1 | 0 | 1 | 0 |",
+      "| 0 | 0 | 1 | 1 | 0 |",
+      "| 0 | 0 | 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a 16 bit adder": {
+    "prefix": "Add16",
+    "body": "Add16(a=${1:a}, b=${2:b}, out=${3:out});",
+    "description": "Adds two 16 bit values. MSB is ingnored."
+  },
+  "Creates a 16 bit increamenter": {
+    "prefix": "Inc16",
+    "body": "Inc16(in=${1:in}, out=${2:out});",
+    "description": "Takes a 16 bit value and incrementes it but 1. (in -> in + 1)"
+  },
+  "Creates a ALU (arithmetic-logic unit)": {
+    "prefix": "ALU",
+    "body": "ALU(x=${1:inputX}, y=${2:inputY}, zx=${3:zeroX}, nx=${4:negateX}, ny=${5:negateY}, f=${6:AddOrAddition}, no=${7:negateOut}, out=${8:out}, zr=${9:outIsZero}, ng=${10:OutNegitive});",
+    "description": [
+      "Takes two 16 bit values (x, y)\n",
+      "zx: zero the x input",
+      "nx: negate the x input",
+      "zy: zero the y input",
+      "ny: negate the y input",
+      "f: compute  out = x + y (if 1) or out = x & y (if 0)",
+      "no: negate the out output\n"
+    ]
+  },
+  "Creates ROM32k": {
+    "prefix": "ROM32",
+    "body": "ROM32K(address=${1:addr}, out=${2:out});",
+    "description": "Instruction memory of the hack platform"
+  }
+}

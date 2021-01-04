@@ -1,0 +1,77 @@
+{
+  "Creates a 16 bit NOT gate": {
+    "prefix": "Not16",
+    "body": "Not16(in=${1:a}, out=${2:out});",
+    "description": [
+      "Requires a 16 bit bus and nagates every bit (a -> ¬a).\n",
+      "| a |out|",
+      "| 1 | 0 |",
+      "| 0 | 1 |\t"
+    ]
+  },
+  "Creates a 16 bit AND gate": {
+    "prefix": "And16",
+    "body": "And16(a=${1:a}, a=${2:b}, out=${3:out});",
+    "description": [
+      "Requires two 16 bit buses and applies the logical AND gate.\n",
+      "| a | b |out|",
+      "| 1 | 1 | 1 |",
+      "| 1 | 0 | 0 |",
+      "| 0 | 1 | 0 |",
+      "| 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a 16 bitOR Gate": {
+    "prefix": "Or16",
+    "body": "Or16(a=${1:a}, b=${2:b}, out=${3:out});",
+    "description": [
+      "Requires two 16 bit buses and applies the logical OR gate.\n",
+      "| a | b |out|",
+      "| 1 | 1 | 1 |",
+      "| 1 | 0 | 1 |",
+      "| 0 | 1 | 1 |",
+      "| 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a 16 bit MUX Gate (Multiplexor)": {
+    "prefix": "Mux16",
+    "body": "Mux16(a=${1:a}, b=${2:b}, sel=${3:Selctor}, out=${4:out});",
+    "description": [
+      "Requires two 16 bit buses and applies the built in Mux gate.\n",
+      "| a | b |sel|out|",
+      "| 1 | 1 | 1 | 1 |",
+      "| 1 | 0 | 1 | 1 |",
+      "| 0 | 1 | 1 | 0 |",
+      "| 0 | 0 | 1 | 0 |",
+      "| 1 | 1 | 0 | 1 |",
+      "| 1 | 0 | 0 | 0 |",
+      "| 0 | 1 | 0 | 1 |",
+      "| 0 | 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a  8 Bit (1 byte) OR gate": {
+    "prefix": "Or8Way",
+    "body": "Or8Way(in=${1:in}, out=${2:out});",
+    "description": "Requires a 8 bit bus as a input and reduces it down to a single out put using a hierarchical chain of OR gates.\n"
+  },
+  "Creates a 16 bit 4 way Mux (Multiplexor)": {
+    "prefix": "Mux4Way16",
+    "body": "Mux4Way16(a=${1:a}, b=${2:b}, c=${3:c}, d=${4:d}, sel=${5:sel}, out=${6:out});",
+    "description": "Requires four 16 bit buses as inputs and a selector input.\n"
+  },
+  "Creates a 16 bit 8 way Mux (Multiplexor)": {
+    "prefix": "Mux8Way16",
+    "body": "Mux8Way16(a=${1:a}, b=${2:b}, c=${3:c}, d=${4:d}, e=${5:e}, f=${6:f}, g=${7:g}, h=${8:h}, sel=${9:sel}, out=${10:out});",
+    "description": "Requires eight 16 bit buses as inputs and a selector input\n"
+  },
+  "Creates a 4 way DMux (Demultiplexer)": {
+    "prefix": "DMux4Way",
+    "body": "DMux4Way(in=${1:in}, sel=${2:sel}, a=${3:a}, b=${4:b}, c=${5:c}, d=${6:d});",
+    "description": "Requires an input bit, a selector bit and produces four outputs.\n"
+  },
+  "Creates 8 way DMux (Demultiplexer)": {
+    "prefix": "DMux8Way",
+    "body": "DMux8Way(in=${1:in}, sel=${2:sel}, a=${3:a}, b=${4:b}, c=${5:c}, d=${6:d}, e=${7:e}, f=${8:f}, g=${9:g}, h=${10:h});",
+    "description": "Requires an input bit, a selector bit and produces eight outputs.\n"
+  }
+}

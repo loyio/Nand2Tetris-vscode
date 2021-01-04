@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "CMP",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#grammar"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control",
+          "match": "\\|"
+        }
+      ]
+    },
+    "grammar": {
+      "patterns": [
+        {
+          "name": "variable.name",
+          "match": "[a-z]"
+        },
+        {
+          "name": "variable.language",
+          "match": "(0|1)"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.cmp"
+}

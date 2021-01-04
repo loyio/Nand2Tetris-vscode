@@ -1,0 +1,85 @@
+{
+  "Creates a DFF (Data flip flop)": {
+    "prefix": "DFF",
+    "body": "DFF(in=${1:in}, out=${2:out});"
+  },
+  "Creates a Bit": {
+    "prefix": "Bit",
+    "body": "Bit(in=${1:in}, load=${2:load}, out=${3:out});",
+    "description": [
+      "1-bit register.\n",
+      "If load[t]=1 then out[t+1] = in[t]",
+      "else out does not change (out[t+1]=out[t])\n"
+    ]
+  },
+  "Creates a Register": {
+    "prefix": "Register",
+    "body": "",
+    "description": [
+      "16-bit register.\n",
+      "If load[t]=1 then out[t+1] = in[t]",
+      "else out does not change\n"
+    ]
+  },
+  "Creates a RAM8": {
+    "prefix": "RAM8",
+    "body": "RAM8(in=${1:in}, load=${2:load}, address=${3:addr}, out=${4:out});",
+    "description": [
+      "Memory of 8 registers, each 16 bit-wide. Out holds the value\n",
+      "stored at the memory location specified by address. If load=1, then ",
+      "the in value is loaded into the memory location specified by address ",
+      "(the loaded value will be emitted to out after the next time step.)\n"
+    ]
+  },
+  "Creates a RAM64": {
+    "prefix": "RAM64",
+    "body": "RAM64(in=${1:in}, load=${2:load}, address=${3:addr}, out=${4:out});",
+    "description": [
+      "Memory of 64 registers, each 16 bit-wide. Out hold the value\n",
+      "stored at the memory location specified by address. If load=1, then",
+      "the in value is loaded into the memory location specified by address",
+      "(the loaded value will be emitted to out after the next time step.)\n"
+    ]
+  },
+  "Creates a RAM512": {
+    "prefix": "RAM512",
+    "body": "RAM512(in=${1:in}, load=${2:load}, address=${3:addr}, out=${4:out});",
+    "description": [
+      "Memory of 512 registers, each 16 bit-wide. Out holds the value\n",
+      "stored at the memory location specified by address. If load=1, then",
+      "the in value is loaded into the memory location specified by address",
+      "(the loaded value will be emitted to out after the next time step.)\n"
+    ]
+  },
+  "Creates a RAM4K": {
+    "prefix": "RAM4K",
+    "body": "RAM4K(in=${1:in}, load=${2:load}, address=${3:addr}, out=${4:out});",
+    "description": [
+      "Memory of 4K registers, each 16 bit-wide. Out hold the value\n",
+      "stored at the memory location specified by address. If load=1, then",
+      "the in value is loaded into the memory location specified by address",
+      "(the loaded value will be emitted to out after the next time step.)\n"
+    ]
+  },
+  "Creates a RAM16K": {
+    "prefix": "RAM16K",
+    "body": "RAM16K(in=${1:in}, load=${2:load}, address=${3:addr}, out=${4:out});",
+    "description": [
+      "Memory of 16K registers, each 16 bit-wide. Out holds the value\n",
+      "stored at the memory location specified by address. If load=1, then",
+      "the in value is loaded into the memory location specified by address",
+      "(the loaded value will be emitted to out after the next time step.)\n"
+    ]
+  },
+  "Creates a PC": {
+    "prefix": "PC",
+    "body": "PC(in=${1:in}, load=${2:load}, inc=${3:increment}, reset=${4:reset}, out=${5:out});",
+    "description": [
+      "A 16-bit counter with load and reset control bits.\n",
+      "if(reset[t]==1) out[t+1] = 0",
+      "else if (load[t]==1)  out[t+1] = in[t]",
+      "else if (inc[t]==1)   out[t+1] = out[t] + 1  (integer addition)",
+      "else out[t+1] = out[t]\n"
+    ]
+  }
+}

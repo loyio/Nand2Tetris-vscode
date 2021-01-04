@@ -1,0 +1,22 @@
+{
+  "Set 2 vars | 0 | 0 |": {
+    "prefix": "var00",
+    "body": ["set ${1:a} 0,", "set ${2:b} 0,", "eval,", "output;"],
+    "description": "set 2 variables a and b to 0\n"
+  },
+  "Set 2 vars | 1 | 1 |": {
+    "prefix": "var11",
+    "body": ["set ${1:a} 1,", "set ${2:b} 1,", "eval,", "output;"],
+    "description": "set 2 variables a and b to 1\n"
+  },
+  "Set 2 vars | 0 | 1 |": {
+    "prefix": "var01",
+    "body": ["set ${1:a} 0,", "set ${2:b} 1,", "eval,", "output;"],
+    "description": "set 2 variables a to 0 and b to 1\n"
+  },
+  "Set 2 vars | 1 | 0 |": {
+    "prefix": "var10",
+    "body": ["set ${1:a} 1,", "set ${2:b} 0,", "eval,", "output;"],
+    "description": "set 2 variables a to 1 and b to 0\n"
+  }
+}

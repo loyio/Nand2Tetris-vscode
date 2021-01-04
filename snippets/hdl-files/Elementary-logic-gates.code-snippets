@@ -1,0 +1,101 @@
+{
+  "Creates a Chip": {
+    "prefix": "Chip",
+    "body": [
+      "CHIP ${1:Name} {\n",
+      "\tIN ${2:input};",
+      "\tOUT ${3:out};",
+      "\tPARTS:",
+      "\t// Code here",
+      "}"
+    ],
+    "description": "Creates a templete for a chip."
+  },
+  "Creates a NAND Gate": {
+    "prefix": "Nand",
+    "body": "Nand(a=${1:a}, b=${2:b}, out=${3:out});",
+    "description": [
+      "Takes two inputs and applies a AND gate then negates the output.\n",
+      "| a | b |out|",
+      "| 1 | 1 | 0 |",
+      "| 1 | 0 | 1 |",
+      "| 0 | 1 | 1 |",
+      "| 0 | 0 | 1 |\t"
+    ]
+  },
+  "Creates a NOT Gate": {
+    "prefix": "Not",
+    "body": "Not(in=${1:a}, out=${2:out});",
+    "description": [
+      "Takes a input (in) and nagates it.\n",
+      "| a |out|",
+      "| 1 | 0 |",
+      "| 0 | 1 |\t"
+    ]
+  },
+  "Creates a AND Gate": {
+    "prefix": "And",
+    "body": "And(a=${1:a}, b=${2:b}, out=${3:out});",
+    "description": [
+      "Takes two inputs and applies the logicall AND gate.\n",
+      "| a | b |out|",
+      "| 1 | 1 | 1 |",
+      "| 1 | 0 | 0 |",
+      "| 0 | 1 | 0 |",
+      "| 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a OR Gate": {
+    "prefix": "Or",
+    "body": "Or(a=${1:a}, b=${2:b}, out=${3:out});",
+    "description": [
+      "Takes two inputs and applies the logical OR gate.\n",
+      "| a | b |out|",
+      "| 1 | 1 | 1 |",
+      "| 1 | 0 | 1 |",
+      "| 0 | 1 | 1 |",
+      "| 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a XOR Gate": {
+    "prefix": "Xor",
+    "body": "Xor(a=${1:a}, b=${2:b}, out=${3:out});",
+    "description": [
+      "Takes two inputs and applies the logical XOR gate.\n",
+      "| a | b |out|",
+      "| 1 | 1 | 0 |",
+      "| 1 | 0 | 1 |",
+      "| 0 | 1 | 1 |",
+      "| 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a MUX Gate (Multiplexor)": {
+    "prefix": "Mux",
+    "body": "Mux(a=${1:a}, b=${2:b}, sel=${3:Selctor}, out=${4:out});",
+    "description": [
+      "Takes two inputs and a selctor input and applies the logical in Mux gate.\n",
+      "| a | b |sel|out|",
+      "| 1 | 1 | 1 | 1 |",
+      "| 1 | 0 | 1 | 1 |",
+      "| 0 | 1 | 1 | 0 |",
+      "| 0 | 0 | 1 | 0 |",
+      "| 1 | 1 | 0 | 1 |",
+      "| 1 | 0 | 0 | 0 |",
+      "| 0 | 1 | 0 | 1 |",
+      "| 0 | 0 | 0 | 0 |\t"
+    ]
+  },
+  "Creates a DMUX Gate (Demultiplexer)": {
+    "prefix": "Dmux",
+    "body": "Dmux(in=${1:in}, sel=${2:selctor}, a=${3:a}, b=${4:b});",
+    "description": [
+      "Takes an input and a selector input and applies and logical Dmux gate.\n",
+      "|in |sel|  out  |",
+      "| D | S | a | b |",
+      "| 0 | 0 | 0 | 0 |",
+      "| 0 | 1 | 0 | 1 |",
+      "| 1 | 0 | 0 | 0 |",
+      "| 1 | 1 | 1 | 0 |\t"
+    ]
+  }
+}

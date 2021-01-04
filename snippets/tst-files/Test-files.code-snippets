@@ -1,0 +1,26 @@
+{
+  "load and output (.tst)": {
+    "prefix": "base",
+    "body": ["load ${1:ChipName}.hdl,", "output-file ${1:ChipName}.out,"],
+    "description": "Snippet for the loding of a chip and output file of the test file."
+  },
+  "load, output, compare-to (.tst)": {
+    "prefix": "base",
+    "body": [
+      "load ${1:ChipName}.hdl,",
+      "output-file ${1:ChipName}.out,",
+      "compare-to ${1:ChipnNme}.cmp,"
+    ],
+    "description": "Snippet for the loding of a chip, output file of the test file and the compare file.\n"
+  },
+  "output-list | a | b |out|": {
+    "prefix": "output-list-2var",
+    "body": "output-list a, b, out;",
+    "description": "Snippet for a output list conating 2 vars and out.\n"
+  },
+  "output-list | a | b | c |out|": {
+    "prefix": "output-list-3var",
+    "body": "output-list a, b, c, out;",
+    "description": "Snippet for a output list conating 3 vars and out.\n"
+  }
+}

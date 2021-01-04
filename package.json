@@ -1,0 +1,178 @@
+{
+  "name": "Nand2Tetris-vscode",
+  "displayName": "Nand2Tetris For Vscode",
+  "description": "snippets nand2tetris hdl, tst and cmp files, lanuage support and syntax-highlighting for hdl, tst, cmp and out files",
+  "version": "0.1",
+  "engines": {
+    "vscode": "^1.52.1"
+  },
+  "publisher": "Loyio",
+  "author": {
+    "name": "Loyio",
+    "url": "https://github.com/loyio"
+  },
+  "icon": "images/tetris.png",
+  "keywords": [
+    "hdl",
+    "tst",
+    "asm",
+    "out",
+    "cmp",
+    "nand2tetris",
+    "snippets",
+    "syntax-highlighting",
+    "syntaxhighlighting",
+    "language support"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/loyio/Nand2Tetris-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loyio/Nand2Tetris-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/loyio/Nand2Tetris-vscode/issues"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Extension Packs",
+    "Language Packs"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "hdl",
+        "aliases": [
+          "HDL",
+          "hdl"
+        ],
+        "extensions": [
+          ".hdl"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "tst",
+        "aliases": [
+          "TST",
+          "tst"
+        ],
+        "extensions": [
+          ".tst"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "cmp",
+        "aliases": [
+          "CMP",
+          "cmp"
+        ],
+        "extensions": [
+          ".cmp"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "out",
+        "aliases": [
+          "OUT",
+          "out"
+        ],
+        "extensions": [
+          ".out"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+				"id": "asm",
+				"aliases": [
+					"ASM",
+					"asm"
+				],
+				"extensions": [
+					".asm"
+				],
+				"configuration": "./language-configuration.json"
+			}
+    ],
+    "grammars": [
+      {
+        "language": "hdl",
+        "scopeName": "source.hdl",
+        "path": "./syntaxes/hdl.tmLanguage.json"
+      },
+      {
+        "language": "tst",
+        "scopeName": "source.tst",
+        "path": "./syntaxes/tst.tmLanguage.json"
+      },
+      {
+        "language": "cmp",
+        "scopeName": "source.cmp",
+        "path": "./syntaxes/cmp.tmLanguage.json"
+      },
+      {
+        "language": "out",
+        "scopeName": "source.out",
+        "path": "./syntaxes/out.tmLanguage.json"
+      },
+      {
+        "language": "asm",
+        "scopeName": "source.asm",
+        "path": "./syntaxes/asm.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "hdl",
+        "path": "./snippets/hdl-files/Elementary-logic-gates.code-snippets"
+      },
+      {
+        "language": "hdl",
+        "path": "./snippets/hdl-files/Elementary-logic-gates-16Bit.code-snippets"
+      },
+      {
+        "language": "hdl",
+        "path": "./snippets/hdl-files/Combinational-chips.code-snippets"
+      },
+      {
+        "language": "hdl",
+        "path": "./snippets/hdl-files/Sequential-chips.code-snippets"
+      },
+      {
+        "language": "hdl",
+        "path": "./snippets/hdl-files/Computer-Architecture.code-snippets"
+      },
+      {
+        "language": "tst",
+        "path": "./snippets/tst-files/Test-files.code-snippets"
+      },
+      {
+        "language": "tst",
+        "path": "./snippets/tst-files/Test-files-2var.code-snippets"
+      },
+      {
+        "language": "tst",
+        "path": "./snippets/tst-files/Test-files-3var.code-snippets"
+      },
+      {
+        "language": "cmp",
+        "path": "./snippets/cmp-files/Cmp-files-rows.code-snippets"
+      },
+      {
+        "language": "cmp",
+        "path": "./snippets/cmp-files/Cmp-files-heads.code-snippets"
+      },
+      {
+        "language": "cmp",
+        "path": "./snippets/cmp-files/Cmp-files-tables.code-snippets"
+      },
+      {
+        "language": "asm",
+        "path": "./snippets/asm-files/Asm-files-branching.code-snippets"
+      }
+    ]
+  }
+}

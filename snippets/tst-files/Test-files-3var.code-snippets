@@ -1,0 +1,90 @@
+{
+  "Set 3 vars | 1 | 1 | 1 |": {
+    "prefix": "var111",
+    "body": [
+      "set ${1:a} 1,",
+      "set ${2:b} 1,",
+      "set ${2:c} 1,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variables a, b and c to 1\n"
+  },
+  "Set 3 vars | 1 | 1 | 0 |": {
+    "prefix": "var110",
+    "body": [
+      "set a ${1:a} 1,",
+      "set ${2:b} 1,",
+      "set ${3:c} 0,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variablesm sets a and b to 1, c to 0\n"
+  },
+  "Set 3 vars | 1 | 0 | 1 |": {
+    "prefix": "var101",
+    "body": [
+      "set a ${1:a} 1,",
+      "set ${2:b} 0,",
+      "set ${3:c} 1,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variables, sets a and c to 1, b to 0\n"
+  },
+  "Set 3 vars | 1 | 0 | 0 |": {
+    "prefix": "var100",
+    "body": [
+      "set a ${1:a} 1,",
+      "set ${2:b} 0,",
+      "set ${3:c} 0,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variables, sets a to 1, b and c to 0\n"
+  },
+  "Set 3 vars | 0 | 1 | 1 |": {
+    "prefix": "var011",
+    "body": [
+      "set a ${1:a} 0,",
+      "set ${2:b} 1,",
+      "set ${3:c} 1,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variables, sets a to 0, b and c to 1\n"
+  },
+  "Set 3 vars | 0 | 1 | 0 |": {
+    "prefix": "var010",
+    "body": [
+      "set a ${1:a} 0,",
+      "set ${2:b} 1,",
+      "set ${3:c} 0,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variables, sets a and c to 0, b to 0\n"
+  },
+  "Set 3 vars | 0 | 0 | 1 |": {
+    "prefix": "var001",
+    "body": [
+      "set a ${1:a} 0,",
+      "set ${2:b} 0,",
+      "set ${3:c} 1,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variables, sets a and b to 0, c to 1\n"
+  },
+  "Set 3 vars | 0 | 0 | 0 |": {
+    "prefix": "var000",
+    "body": [
+      "set a ${1:a} 0,",
+      "set ${2:b} 0,",
+      "set ${3:c} 0,",
+      "eval,",
+      "output;"
+    ],
+    "description": "set 3 variables a, b and c to 0\n"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "Row-2": {
+    "prefix": "Row-2",
+    "body": "| 0 | 0 |",
+    "description": "Add a row of 2 to the truth table.\n"
+  },
+  "Row-3": {
+    "prefix": "Row-3",
+    "body": "| 0 | 0 | 0 |",
+    "description": "Add a row of 3 to the truth table.\n"
+  },
+  "Row-4": {
+    "prefix": "Row-4",
+    "body": "| 0 | 0 | 0 | 0 |",
+    "description": "Add a row of 4 to the truth table.\n"
+  },
+  "Row-5": {
+    "prefix": "Row-5",
+    "body": "| 0 | 0 | 0 | 0 | 0 |",
+    "description": "Add a row of 5 to the truth table.\n"
+  },
+  "Row-6": {
+    "prefix": "Row-6",
+    "body": "| 0 | 0 | 0 | 0 | 0 | 0 |",
+    "description": "Add a row of 6 to the truth table.\n"
+  }
+}

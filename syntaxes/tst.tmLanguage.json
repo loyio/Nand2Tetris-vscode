@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "TST",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#grammar"
+    },
+    {
+      "include": "#blockComment"
+    },
+    {
+      "include": "#params"
+    },
+    {
+      "include": "#functions"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control",
+          "match": "(load|output-file|compare-to|output-list|eval|output)"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "entity.name.function",
+          "match": "set"
+        }
+      ]
+    },
+    "params": {
+      "patterns": [
+        {
+          "match": "([a-zA-Z]+)\\s(1|0)",
+          "captures": {
+            "1": {
+              "name": "variable"
+            },
+            "2": {
+              "name": "markup.bold"
+            }
+          }
+        }
+      ]
+    },
+    "grammar": {
+      "patterns": [
+        {
+          "name": "variable.language",
+          "match": "[a-zA-z]+\\.(hdl|out|cmp)"
+        },
+        {
+          "match": "(\\s[a-zA-Z]+)(\\%B([0-9]\\.)+[0-9])",
+          "captures": {
+            "1": {
+              "name": "variable"
+            },
+            "2": {
+              "name": "string"
+            }
+          }
+        },
+        {
+          "match": "(?<=output-list)(\\s[a-zA-Z]+[0-9]*)+",
+          "name": "variable"
+        }
+      ]
+    },
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash",
+          "match": "//.*"
+        }
+      ]
+    },
+    "blockComment": {
+      "patterns": [
+        {
+          "begin": "\\/\\*\\*",
+          "end": "\\*\\/",
+          "name": "comment.block"
+        },
+        {
+          "begin": "\\/\\*",
+          "end": "\\*\\/",
+          "name": "comment.block"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.tst"
+}

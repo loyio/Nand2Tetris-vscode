@@ -1,0 +1,27 @@
+{
+  "Head-2var-out": {
+    "prefix": "Head-2",
+    "body": "| ${1:a} | ${2:b} |${3:out}|",
+    "description": "Snippet the head of the turth table that has 2 inputs and an output.\n"
+  },
+  "Head-3var-out": {
+    "prefix": "Head-3",
+    "body": "| ${1:a} | ${2:b} | ${3:c} |${4:out}|",
+    "description": "Snippet the head of the turth table that has 3 inputs and an output.\n"
+  },
+  "Head-4var-out": {
+    "prefix": "Head-4",
+    "body": "| ${1:a} | ${2:b} | ${3:c} | ${4:c} |${5:out}|",
+    "description": "Snippet the head of the turth table that has 4 inputs and an output.\n"
+  },
+  "Head-2var-2out": {
+    "prefix": "Head-2-2",
+    "body": "| ${1:a} | ${2:b} |${3:out}|${4:out}|",
+    "description": "Snippet the head of the turth table that has 2 inputs and 2 outputs.\n"
+  },
+  "Head-3var-2out": {
+    "prefix": "Head-2-2",
+    "body": "| ${1:a} | ${2:b} | ${3:c} |${4:out}|${5:out}|",
+    "description": "Snippet the head of the turth table that has 3 inputs and 2 outputs.\n"
+  }
+}
