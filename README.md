@@ -10,29 +10,29 @@ A vscode extension for Nand2Tetris Project
 
 `.hdl` syntax
 
-![hdl-syntaxes](images/hdl-syntaxes.png)
+![hdl-syntaxes](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/hdl-syntaxes.png?raw=true)
 
 `.tst` syntax
 
-![tst-syntaxes](images/tst-syntaxes.png)
+![tst-syntaxes](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/tst-syntaxes.png?raw=true)
 
 `.out` `.cmp` syntax
 
-![out-syntaxes](images/out-syntaxes.png)
+![out-syntaxes](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/out-syntaxes.png?raw=true)
 
 `.asm` syntax
 
-![tst-syntaxes](images/asm-syntaxes.png)
+![tst-syntaxes](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/asm-syntaxes.png?raw=true)
 
 
 
 `hdl`  snippets
 
-![hdl-snippets](images/hdl-snippet.gif)
+![hdl-snippets](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/hdl-snippet.gif?raw=true)
 
 `asm` snippets
 
-![asm-snippet](images/asm-snippet.gif)
+![asm-snippet](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/asm-snippet.gif?raw=true)
 
 
 ## Change log
