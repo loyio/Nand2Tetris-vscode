@@ -4,7 +4,7 @@
   "description": "Supports snippets and linting for Nand2Tetris Courses,Snippets nand2tetris hdl, tst, cmp and asm  files, lanuage support and syntax-highlighting for hdl, tst, cmp, asm and out files",
   "version": "0.1.1",
   "engines": {
-    "vscode": "^1.52.1"
+    "vscode": "^1.8.0"
   },
   "publisher": "Loyio",
   "author": {
