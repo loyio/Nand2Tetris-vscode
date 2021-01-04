@@ -1,6 +1,8 @@
 language: node_js
+os: linux
+dist: xenial
 node_js:
   - "7.3"
-before script:
+before_script:
   - npm i vsce -g
 script: vsce package
