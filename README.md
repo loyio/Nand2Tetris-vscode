@@ -32,7 +32,7 @@ A vscode extension for Nand2Tetris Project
 
 `asm` snippets
 
-![asm-snippet](/Users/loyio/githubProject/Nand2Tetris-vscode/images/asm-snippet.gif)
+![asm-snippet](images/asm-snippet.gif)
 
 
 ## Change log
