@@ -6,7 +6,33 @@ A vscode extension for Nand2Tetris Project
 
 ## Features
 
+</br>
 
+`.hdl` syntax
+
+![hdl-syntaxes](images/hdl-syntaxes.png)
+
+`.tst` syntax
+
+![tst-syntaxes](images/tst-syntaxes.png)
+
+`.out` `.cmp` syntax
+
+![out-syntaxes](images/out-syntaxes.png)
+
+`.asm` syntax
+
+![tst-syntaxes](images/asm-syntaxes.png)
+
+
+
+`hdl`  snippets
+
+![hdl-snippets](images/hdl-snippet.gif)
+
+`asm` snippets
+
+![asm-snippet](/Users/loyio/githubProject/Nand2Tetris-vscode/images/asm-snippet.gif)
 
 
 ## Change log

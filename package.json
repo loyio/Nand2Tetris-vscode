@@ -11,7 +11,7 @@
     "name": "Loyio",
     "url": "https://github.com/loyio"
   },
-  "icon": "images/tetris.png",
+  "icon": "images/nand2tetris.png",
   "keywords": [
     "hdl",
     "tst",
