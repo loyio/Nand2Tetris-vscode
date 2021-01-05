@@ -2,7 +2,7 @@
   "name": "Nand2Tetris-vscode",
   "displayName": "Nand2Tetris For Vscode",
   "description": "Supports snippets and linting for Nand2Tetris Courses,Snippets nand2tetris hdl, tst, cmp and asm  files, lanuage support and syntax-highlighting for hdl, tst, cmp, asm and out files",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.8.0"
   },
@@ -100,13 +100,13 @@
       {
         "id": "hack",
         "aliases": [
-            "HACK",
-            "hack"
+          "HACK",
+          "hack"
         ],
         "extensions": [
-            ".hack"
+          ".hack"
         ],
-          "configuration": "./language-configuration.json"  
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
