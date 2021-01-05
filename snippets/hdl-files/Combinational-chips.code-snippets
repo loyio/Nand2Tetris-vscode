@@ -39,7 +39,7 @@
   },
   "Creates a ALU (arithmetic-logic unit)": {
     "prefix": "ALU",
-    "body": "ALU(x=${1:inputX}, y=${2:inputY}, zx=${3:zeroX}, nx=${4:negateX}, ny=${5:negateY}, f=${6:AddOrAddition}, no=${7:negateOut}, out=${8:out}, zr=${9:outIsZero}, ng=${10:OutNegitive});",
+    "body": "ALU(x=${1:inputX}, y=${2:inputY}, zx=${3:zeroX}, nx=${4:negateX}, zy=${5:zeroY} ny=${6:negateY}, f=${7:AddOrAddition}, no=${8:negateOut}, out=${9:out}, zr=${10:outIsZero}, ng=${11:OutNegitive});",
     "description": [
       "Takes two 16 bit values (x, y)\n",
       "zx: zero the x input",
@@ -49,6 +49,11 @@
       "f: compute  out = x + y (if 1) or out = x & y (if 0)",
       "no: negate the out output\n"
     ]
+  },
+  "Creates a Register": {
+    "prefix": "Register",
+    "body": "Register(in=${1:in}, load=${2:load}, out=${3:out});",
+    "description": "Store Data chip of the hack platform"
   },
   "Creates ROM32k": {
     "prefix": "ROM32",

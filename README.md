@@ -37,6 +37,12 @@ A vscode extension for Nand2Tetris Project
 
 ## Change log
 
+### v0.2
+
+- add .hack syntax support
+- add new computer-architecture snippets
+- fix some bugs
+
 ### v0.1.2
 
 - update the description pages
@@ -47,7 +53,14 @@ A vscode extension for Nand2Tetris Project
 
 ## TODO
 
+* [ ] Syntaxes
+
+  * [x] hack
+  * [ ] jack
+
+
 * [ ] Snippets
+  
   * [ ] jack
 
 

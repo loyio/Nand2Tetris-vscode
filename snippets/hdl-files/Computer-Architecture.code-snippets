@@ -1,7 +1,7 @@
 {
   "Creates Memory chip": {
     "prefix": "Memory",
-    "body": "Memory(in=${1:in}, load=${2:load}, address=${3:addr}, out={4:out});",
+    "body": "Memory(in=${1:in}, load=${2:load}, address=${3:addr}, out=${4:out});",
     "description": "takes in a 16 bit value, load value and a 15 bit address\n"
   },
   "Creates a CPU": {
@@ -16,6 +16,25 @@
       "writeM: Write into M",
       "Address in data memory (of M)",
       "pc: address of next instruction\n"
+    ]
+  },
+  "Creates a SCREEN": {
+    "prefix": "Screen",
+    "body": "Screen(in=${1:in}, load=${2:load}, address=${3:address}, out=${4:out});",
+    "description": [
+      "The built-in Screen chip",
+      "in : the screen pixel group data",
+      "load : if is screen address",
+      "address : the address of screen pixel group",
+      "out : out of this screen chip"
+    ]
+  },
+  "Creates a Keyboard": {
+    "prefix": "Keyboard",
+    "body": "Keyboard(out=${1:out});",
+    "description": [
+      "The built-in Keyboard chip",
+      "get the pressing key address",
     ]
   },
   "Creates a Computer": {

@@ -18,6 +18,7 @@
     "asm",
     "out",
     "cmp",
+    "hack",
     "nand2tetris",
     "snippets",
     "syntax-highlighting",
@@ -95,6 +96,17 @@
           ".asm"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "hack",
+        "aliases": [
+            "HACK",
+            "hack"
+        ],
+        "extensions": [
+            ".hack"
+        ],
+          "configuration": "./language-configuration.json"  
       }
     ],
     "grammars": [
@@ -122,6 +134,11 @@
         "language": "asm",
         "scopeName": "source.asm",
         "path": "./syntaxes/asm.tmLanguage.json"
+      },
+      {
+        "language": "hack",
+        "scopeName": "source.hack",
+        "path": "./syntaxes/hack.tmLanguage.json"
       }
     ],
     "snippets": [
