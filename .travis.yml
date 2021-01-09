@@ -4,5 +4,9 @@ dist: xenial
 node_js:
   - "15.5.0"
 before_script:
+  - npm install -g codecov
   - npm i vsce -g
-script: vsce package
+script:
+  - istanbul covel ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
+  - vsce package
