@@ -19,6 +19,7 @@
     "out",
     "cmp",
     "hack",
+    "jack",
     "nand2tetris",
     "snippets",
     "syntax-highlighting",
@@ -107,6 +108,17 @@
           ".hack"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "jack",
+        "aliases": [
+          "JACK",
+          "jack"
+        ],
+        "extensions": [
+          ".jack"
+        ],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
@@ -139,6 +151,11 @@
         "language": "hack",
         "scopeName": "source.hack",
         "path": "./syntaxes/hack.tmLanguage.json"
+      },
+      {
+        "language": "jack",
+        "scopeName": "source.jack",
+        "path": "./syntaxes/jack.tmLanguage.json"
       }
     ],
     "snippets": [
@@ -189,6 +206,18 @@
       {
         "language": "asm",
         "path": "./snippets/asm-files/Asm-files-branching.code-snippets"
+      },
+      {
+        "language": "jack",
+        "path": "./snippets/jack-files/Jack-files-class.code-snippets"
+      },
+      {
+        "language": "jack",
+        "path": "./snippets/jack-files/Jack-files-datatype.code-snippets"
+      },
+      {
+        "language": "jack",
+        "path": "./snippets/jack-files/Jack-files-branching.code-snippets"
       }
     ]
   }

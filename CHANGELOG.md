@@ -1,6 +1,12 @@
 All notable changes to the "Nand2Tetris for vscode" extension will be documented in this file.
 
-## [0.2]
+## [0.3.0]
+
+- add .jack syntax support
+- add .jack completion support
+- fix some bugs
+
+## [0.2.0]
 
 - add .hack syntax support
 - add new computer-architecture snippets

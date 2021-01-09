@@ -1,0 +1,24 @@
+{
+    "create a variable Data Type": {
+        "prefix": [
+            "var",
+            "boolean",
+            "array",
+            "string",
+            "int",
+        ],
+        "body": [
+            "var ${1|int,boolean,char,Array,String|} ${2:varName}"
+        ],
+        "description": "Create a variable object"
+    },
+    "create a let Data Type": {
+        "prefix": [
+            "let",
+        ],
+        "body": [
+            "let ${1:varName} = ${2:varValue}"
+        ],
+        "description": "Create a let Data Type"
+    }
+}

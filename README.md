@@ -24,6 +24,10 @@ A vscode extension for Nand2Tetris Project
 
 ![tst-syntaxes](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/asm-syntaxes.png?raw=true)
 
+`.jack` syntax
+
+![jack-syntaxes](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/jack-syntaxes.png?raw=true)
+
 
 
 `hdl`  snippets
@@ -34,10 +38,20 @@ A vscode extension for Nand2Tetris Project
 
 ![asm-snippet](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/asm-snippet.gif?raw=true)
 
+`jack` snippets
+
+![jack-snippet](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/jack-snippet.gif?raw=true)
+
 
 ## Change log
 
-### v0.2
+### v0.3.0
+
+- add .jack syntax support
+- add .jack completion support
+- fix some bugs
+
+### v0.2.0
 
 - add .hack syntax support
 - add new computer-architecture snippets

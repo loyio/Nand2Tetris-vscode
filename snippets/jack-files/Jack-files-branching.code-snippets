@@ -1,0 +1,35 @@
+{
+    "while-loop": {
+        "prefix": [
+            "while",
+        ],
+        "body": [
+            "while (${1:condition}) {",
+            "\t${0:$LINE_COMMENT code}",
+            "}"
+        ],
+        "description": "Create a while-loop"
+    },
+    "single-line if statement":{
+        "prefix": [
+            "if",
+            "else"
+        ],
+        "body": [
+            "if (${1:condition})  { ${2:code}; }"
+        ],
+        "description": "Create a single-line if statement"
+    },
+    "multi-line if statement":{
+        "prefix": [
+            "if",
+            "else"
+        ],
+        "body": [
+            "if (${1:condition}) {",
+            "\t${0:$LINE_COMMENT code}",
+            "}"
+        ],
+        "description": "Create a multi-line if statement"
+    }
+}
