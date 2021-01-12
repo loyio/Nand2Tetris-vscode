@@ -1,5 +1,11 @@
 All notable changes to the "Nand2Tetris for vscode" extension will be documented in this file.
 
+## [0.4.0]
+
+- add .vm syntax support
+- add jack OS function snippets
+- fix some bugs
+
 ## [0.3.0]
 
 - add .jack syntax support

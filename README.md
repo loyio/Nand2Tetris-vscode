@@ -45,6 +45,12 @@ A vscode extension for Nand2Tetris Project
 
 ## Change log
 
+### v0.4.0
+
+- add .vm syntax support
+- add jack OS function snippets
+- fix some bugs
+
 ### v0.3.0
 
 - add .jack syntax support

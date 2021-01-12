@@ -119,6 +119,17 @@
           ".jack"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "vm",
+        "aliases": [
+          "VM",
+          "vm"
+        ],
+        "extensions": [
+          ".vm"
+        ],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
@@ -156,6 +167,11 @@
         "language": "jack",
         "scopeName": "source.jack",
         "path": "./syntaxes/jack.tmLanguage.json"
+      },
+      {
+        "language": "vm",
+        "scopeName": "source.vm",
+        "path": "./syntaxes/vm.tmLanguage.json"
       }
     ],
     "snippets": [
@@ -218,6 +234,10 @@
       {
         "language": "jack",
         "path": "./snippets/jack-files/Jack-files-branching.code-snippets"
+      },
+      {
+        "language": "jack",
+        "path": "./snippets/jack-files/Jack-files-os.code-snippets"
       }
     ]
   }

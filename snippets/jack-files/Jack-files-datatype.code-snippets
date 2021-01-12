@@ -12,6 +12,19 @@
         ],
         "description": "Create a variable object"
     },
+    "create a static Data Type": {
+        "prefix": [
+            "static",
+            "boolean",
+            "array",
+            "string",
+            "int",
+        ],
+        "body": [
+            "static ${1|int,boolean,char,Array,String|} ${2:varName}"
+        ],
+        "description": "Create a static object"
+    },
     "create a let Data Type": {
         "prefix": [
             "let",
