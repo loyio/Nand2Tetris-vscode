@@ -1,96 +1,98 @@
 {
-    "call a function": {
-        "prefix": [
-            "do",
-        ],
-        "body": [
-            "do ${1:}"
-        ],
-        "description": "calling a function"
-    },
-    "new a object": {
-        "prefix": [
-            ".new",
-            "new",
-        ],
-        "body": [
-            ".new(${1:});"
-        ],
-        "description": "New a object"
-    },
-    "dispose a object": {
-        "prefix": [
-            ".dispose",
-            "dispose"
-        ],
-        "body": [
-            ".dispose();"
-        ],
-        "description": "Dispose a object"
-    },
-    "call output function": {
-        "prefix": [
-            "output.printstring",
-            "output.println",
-            "output.printint",
-            "output.movecursor",
-            "output.printchar",
-            "output.backspace",
-            "printstring",
-            "println",
-            "printint",
-            "movecursor",
-            "printchar",
-            "backspace"
-        ],
-        "body": [
-            "Output.${1:|printString, println, printInt, moveCursor, printChar, backSpace|}(${2:});"
-        ],
-        "description": "Call output function"
-    },
-    "memory operatoin": {
-        "prefix": [
-            "Memory.poke",
-            "Memory.peek",
-            "poke",
-            "peek",
-        ],
-        "body": [
-            "Memory.${1:|poke, peek|}(${2:});"
-        ],
-        "description": "Basic memory operatoin"
-    },
-    "Screen SetColor function": {
-        "prefix": [
-            "Screen.setcolor",
-            "setcolor"
-        ],
-        "body": [
-            "Screen.setColor(${1:|true, false|});"
-        ],
-        "description": "Screen SetColor function"
-    },
-    "Screen draw a line or rectangle function": {
-        "prefix": [
-            "Screen.drawline",
-            "Screen.drawrectangle",
-            "drawline",
-            "drawrectangle"
-        ],
-        "body": [
-            "Screen.${1:|drawLine, drawRectangle|}(${2:}, ${3:}, ${4:}, ${5:});"
-        ],
-        "description": "Screen draw a line or rectangle function"
-    },
-    "Screen draw a circle function": {
-        "prefix": [
-            "Screen.drawcircle",
-            "drawcircle"
-        ],
-        "body": [
-            "Screen.drawCircle(${1:}, ${2:}, ${3:});"
-        ],
-        "description": "Screen draw a circle function"
-    },
+  "call a function": {
+      "prefix": [
+          "do",
+      ],
+      "body": [
+          "do ${1:funcName}"
+      ],
+      "description": "calling a function"
+  },
+  "new a object": {
+      "prefix": [
+          ".new",
+          "new",
+      ],
+      "body": [
+          ".new(${1:});"
+      ],
+      "description": "New a object"
+  },
+  "dispose a object": {
+      "prefix": [
+          ".dispose",
+          "dispose"
+      ],
+      "body": [
+          ".dispose();"
+      ],
+      "description": "Dispose a object"
+  },
+  "call output function": {
+      "prefix": [
+          "Output",
+          "Output.printstring",
+          "Output.println",
+          "Output.printint",
+          "Output.movecursor",
+          "Output.printchar",
+          "Output.backspace",
+          "printstring",
+          "println",
+          "printint",
+          "movecursor",
+          "printchar",
+          "backspace"
+      ],
+      "body": [
+          "Output.${1|printString,println,printInt,moveCursor,printChar,backSpace|}(${2:});"
+      ],
+      "description": "Call output function"
+  },
+  "memory operatoin": {
+      "prefix": [
+          "Memory",
+          "Memory.poke",
+          "Memory.peek",
+          "poke",
+          "peek",
+      ],
+      "body": [
+          "Memory.${1|poke,peek|}(${2:address});"
+      ],
+      "description": "Basic memory operation"
+  },
+  "Screen SetColor function": {
+      "prefix": [
+          "Screen.setcolor",
+          "setcolor"
+      ],
+      "body": [
+          "Screen.setColor(${1|true,false|});"
+      ],
+      "description": "Screen SetColor function"
+  },
+  "Screen draw a line or rectangle function": {
+      "prefix": [
+          "Screen.drawline",
+          "Screen.drawrectangle",
+          "drawline",
+          "drawrectangle"
+      ],
+      "body": [
+          "Screen.${1|drawLine,drawRectangle|}(${2:x1}, ${3:x2}, ${4:y1}, ${5:y2});"
+      ],
+      "description": "Screen draw a line or rectangle function"
+  },
+  "Screen draw a circle function": {
+      "prefix": [
+          "Screen.drawcircle",
+          "drawcircle"
+      ],
+      "body": [
+          "Screen.drawCircle(${1:x}, ${2:y}, ${3:radius});"
+      ],
+      "description": "Screen draw a circle function"
+  },
 
 }
