@@ -1,5 +1,10 @@
 All notable changes to the "Nand2Tetris for vscode" extension will be documented in this file.
 
+## [0.5.0]
+
+- fix some bugs
+- update document file
+
 ## [0.4.0]
 
 - add .vm syntax support
@@ -32,6 +37,7 @@ All notable changes to the "Nand2Tetris for vscode" extension will be documented
 - Initial _cmp_ snippets
 - Initial _tst_ snippets
 - Initial _asm_ snippets
+- Initial *jack* snippets
 
 ### Syntax Highlighting
 
@@ -40,6 +46,9 @@ All notable changes to the "Nand2Tetris for vscode" extension will be documented
 - tst
 - out
 - asm
+- hack
+- jack
+- vm
 
 ### Language Support
 
@@ -48,3 +57,5 @@ All notable changes to the "Nand2Tetris for vscode" extension will be documented
 - tst
 - out
 - asm
+- jack
+- vm

@@ -11,7 +11,7 @@
   },
   "Creates a 16 bit AND gate": {
     "prefix": "And16",
-    "body": "And16(a=${1:a}, a=${2:b}, out=${3:out});",
+    "body": "And16(a=${1:a}, b=${2:b}, out=${3:out});",
     "description": [
       "Requires two 16 bit buses and applies the logical AND gate.\n",
       "| a | b |out|",

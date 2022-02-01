@@ -42,8 +42,12 @@ A vscode extension for Nand2Tetris Project
 
 ![jack-snippet](https://github.com/loyio/Nand2Tetris-vscode/blob/main/images/jack-snippet.gif?raw=true)
 
-
 ## Change log
+
+### v0.5.0
+
+- fix some bugs
+- update document file
 
 ### v0.4.0
 
@@ -73,15 +77,15 @@ A vscode extension for Nand2Tetris Project
 
 ## TODO
 
-* [ ] Syntaxes
+* [x] Syntaxes
 
   * [x] hack
-  * [ ] jack
+  * [x] jack
 
 
-* [ ] Snippets
+* [x] Snippets
   
-  * [ ] jack
+  * [x] jack
 
 
 
