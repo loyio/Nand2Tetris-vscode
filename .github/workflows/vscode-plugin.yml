@@ -25,6 +25,8 @@ jobs:
       
       - name: Setup Node.js environment
         uses: action/setup-node@v2.5.1
+        with:
+          node-version: '17.4.0'
         
       - name: Install Vsce
         run: npm i vsce -g
